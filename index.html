@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asika A — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">AA</div>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link active" data-section="hero">Home</a></li>
+      <li><a href="#" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#" class="nav-link" data-section="achievements">Achievements</a></li>
+      <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- SECTIONS WRAPPER -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="section active" id="hero">
+      <div class="hero-bg">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open to Opportunities
+        </div>
+        <h1 class="hero-name">ASIKA A</h1>
+        <div class="hero-roles">
+          <span class="role-prefix">Aspiring </span>
+          <span class="role-text" id="roleText"></span>
+          <span class="role-cursor">|</span>
+        </div>
+        <p class="hero-statement">
+          I build intelligent systems and interactive digital experiences that combine
+          embedded systems, AI, data analytics, and modern frontend engineering.
+        </p>
+        <div class="hero-cta">
+          <button class="btn-primary" onclick="navigateTo('projects')">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="btn-secondary" onclick="navigateTo('contact')">
+            <span>Let's Connect</span>
+          </button>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Asika03" target="_blank" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/asikaselvam" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:asikaayyarselvam@gmail.com" class="social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          </a>
+        </div>
+        <div class="hero-scroll" onclick="navigateTo('about')">
+          <span class="scroll-label">Scroll</span>
+          <div class="scroll-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </div>
+        </div>
+      </div>
+      <!-- Floating elements -->
+      <div class="float-el float-1"><span class="mono">&lt;/&gt;</span></div>
+      <div class="float-el float-2"><span class="mono">AI</span></div>
+      <div class="float-el float-3"><span class="mono">{ }</span></div>
+      <div class="float-el float-4"><span class="mono">∑</span></div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="section-bg">
+        <div class="goo-blob goo-1"></div>
+        <div class="goo-blob goo-2"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="photo-frame">
+              <div class="photo-glow"></div>
+              <img src="assets/asika.jpg" alt="Asika A" class="profile-photo" />
+              <div class="photo-border"></div>
+            </div>
+            <div class="photo-tag">
+              <span class="badge-dot"></span>
+              B.E Biomedical Engineering
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p class="about-intro">
+              I'm <strong>Asika A</strong>, a Biomedical Engineering student at
+              <strong>PSG College of Technology</strong>, Coimbatore — where I sit at the
+              intersection of healthcare, technology, and intelligent systems.
+            </p>
+            <p>
+              My curiosity doesn't stay in one lane. I'm equally drawn to training deep learning
+              models for medical imaging, crafting clean frontend interfaces, and building
+              data pipelines that surface meaningful insights. I believe the most impactful
+              technology is built when analytical thinking meets thoughtful design.
+            </p>
+            <p>
+              Whether it's evaluating LLM reliability in healthcare contexts, classifying
+              livestock using computer vision, or designing rehabilitation devices — I approach
+              every problem with the same mindset: understand deeply, build carefully, iterate
+              relentlessly.
+            </p>
+            <div class="beyond-coding">
+              <h4>Beyond Coding</h4>
+              <div class="beyond-tags">
+                <span class="btag">Emerging Tech Curiosity</span>
+                <span class="btag">Teamwork</span>
+                <span class="btag">Leadership</span>
+                <span class="btag">Continuous Learning</span>
+                <span class="btag">Communication</span>
+                <span class="btag">Creative Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <span class="footer-name">Asika A</span>
+        <div class="footer-socials">
+          <a href="https://github.com/Asika03" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/asikaselvam" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:asikaayyarselvam@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="section-bg">
+        <div class="goo-blob goo-3"></div>
+        <div class="goo-blob goo-4"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Work With</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category reveal" style="--cat-color:#6366f1">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">{ }</span>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">C</span>
+            </div>
+          </div>
+          <div class="skill-category reveal" style="--cat-color:#06b6d4">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">&lt;/&gt;</span>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+            </div>
+          </div>
+          <div class="skill-category reveal" style="--cat-color:#8b5cf6">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">AI</span>
+              <h3>AI & Data</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Deep Learning</span>
+              <span class="skill-tag">Data Analytics</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Prompt Engineering</span>
+            </div>
+          </div>
+          <div class="skill-category reveal" style="--cat-color:#10b981">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">[ ]</span>
+              <h3>Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">MATLAB</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">MS Excel</span>
+              <span class="skill-tag">MS PowerPoint</span>
+              <span class="skill-tag">MS Word</span>
+            </div>
+          </div>
+          <div class="skill-category reveal" style="--cat-color:#f59e0b">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">*</span>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Teamwork</span>
+              <span class="skill-tag">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <span class="footer-name">Asika A</span>
+        <div class="footer-socials">
+          <a href="https://github.com/Asika03" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="https://www.linkedin.com/in/asikaselvam" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="mailto:asikaayyarselvam@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section" id="experience">
+      <div class="section-bg">
+        <div class="goo-blob goo-1"></div>
+        <div class="goo-blob goo-3"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Where I've Worked</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-role">Data Analytics Intern</h3>
+                  <span class="tl-company">Aivar Innovations (HQ), Coimbatore</span>
+                </div>
+                <span class="tl-date">May – Jun 2026 · Ongoing</span>
+              </div>
+              <ul class="tl-points">
+                <li>Working on AI, Machine Learning, and Data Analytics projects in an applied research environment.</li>
+                <li>Performing data cleaning, processing, and analysis using Python, Pandas, and NumPy.</li>
+                <li>Exploring intelligent data-driven systems and contributing to real-world analytics pipelines.</li>
+              </ul>
+              <div class="tl-tags">
+                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Machine Learning</span><span>Data Analytics</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-role">Full Stack Development Intern</h3>
+                  <span class="tl-company">CogniTech, Coimbatore (Offline)</span>
+                </div>
+                <span class="tl-date">Nov 2025 · 8 days</span>
+              </div>
+              <ul class="tl-points">
+                <li>Learned frontend and backend development fundamentals including HTML, CSS, and server-side basics.</li>
+                <li>Worked with XAMPP for local server setup, database handling, and understanding web application workflows.</li>
+              </ul>
+              <div class="tl-tags">
+                <span>HTML</span><span>CSS</span><span>XAMPP</span><span>Web Development</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-role">UI/UX Design Intern</h3>
+                  <span class="tl-company">InternEzy (Online)</span>
+                </div>
+                <span class="tl-date">Jul – Sep 2024 · 2 months</span>
+              </div>
+              <ul class="tl-points">
+                <li>Designed wireframes and UI prototypes in Figma with a focus on usability and user experience.</li>
+                <li>Improved designs through feedback-driven iterations and visual enhancements.</li>
+              </ul>
+              <div class="tl-tags">
+                <span>Figma</span><span>UI/UX</span><span>Wireframing</span><span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <span class="footer-name">Asika A</span>
+        <div class="footer-socials">
+          <a href="https://github.com/Asika03" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="https://www.linkedin.com/in/asikaselvam" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="mailto:asikaayyarselvam@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="section-bg">
+        <div class="goo-blob goo-2"></div>
+        <div class="goo-blob goo-4"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I've Built</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <!-- Featured Project -->
+        <div class="featured-project reveal">
+          <div class="featured-badge">⭐ Featured AI Research Project</div>
+          <div class="featured-inner">
+            <div class="featured-text">
+              <h3>LLM Reliability Analysis Using Real-Time Health & Disease Data</h3>
+              <p class="featured-desc">A comprehensive evaluation system analyzing whether modern Large Language Models can reliably answer healthcare-related questions using real-time disease and health datasets.</p>
+              <div class="case-study">
+                <div class="cs-block">
+                  <span class="cs-label">Challenge</span>
+                  <p>Evaluating whether modern LLMs can reliably answer healthcare-related questions using real-time disease and health datasets — a critical gap in AI safety for medical applications.</p>
+                </div>
+                <div class="cs-block">
+                  <span class="cs-label">Approach</span>
+                  <p>Built a comparative evaluation system analyzing multiple LLMs across healthcare prompts, factual accuracy tests, hallucination detection, refusal behavior, and category-wise reliability analysis.</p>
+                </div>
+                <div class="cs-block">
+                  <span class="cs-label">Solution</span>
+                  <p>Developed a fully interactive analytics dashboard using React, HTML, CSS, and JavaScript to visualize hallucination trends, factual reliability, refusal patterns, model comparisons, and performance insights.</p>
+                </div>
+                <div class="cs-block">
+                  <span class="cs-label">Key Learning</span>
+                  <p>AI reliability is highly context-dependent, especially in healthcare. Trustworthy AI systems require strong evaluation frameworks and transparent analysis pipelines.</p>
+                </div>
+              </div>
+              <div class="featured-tech">
+                <span>React</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                <span>Python</span><span>APIs</span><span>Pandas</span><span>NumPy</span>
+                <span>Regex</span><span>Prompt Engineering</span>
+              </div>
+              <div class="featured-links">
+                <a href="https://health-hallu-yq55.vercel.app/" target="_blank" class="btn-primary">
+                  <span>Live Dashboard</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/Asika03" target="_blank" class="btn-secondary">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="proj-number">01</div>
+            <h3>Interactive Gamified Rehabilitation Glove</h3>
+            <div class="case-study-mini">
+              <div><span class="cs-label">Challenge</span><p>Improving patient engagement in upper limb rehabilitation — traditional therapy is repetitive and lacks motivation.</p></div>
+              <div><span class="cs-label">Approach</span><p>Translating therapeutic hand movements into interactive game actions using sensor-based input.</p></div>
+              <div><span class="cs-label">Solution</span><p>A gamified rehabilitation glove with real-time feedback systems and user-centered design for enhanced recovery.</p></div>
+              <div><span class="cs-label">Key Learning</span><p>Sensor integration and real-time feedback loops are critical for effective rehabilitation technology.</p></div>
+            </div>
+            <div class="proj-tags"><span>Embedded Systems</span><span>Sensors</span><span>Healthcare</span><span>Real-time Feedback</span></div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="proj-number">02</div>
+            <h3>ML-Based Cow & Buffalo Classification</h3>
+            <div class="case-study-mini">
+              <div><span class="cs-label">Challenge</span><p>Accurately distinguishing between cows and buffaloes using visual data for agricultural applications.</p></div>
+              <div><span class="cs-label">Approach</span><p>Transfer learning with VGG16 combined with pose estimation for biometric feature extraction.</p></div>
+              <div><span class="cs-label">Solution</span><p>A classification model extracting body length, height, chest width, and rump angle for structured scoring.</p></div>
+              <div><span class="cs-label">Key Learning</span><p>Combining transfer learning with domain-specific feature engineering significantly improves classification accuracy.</p></div>
+            </div>
+            <div class="proj-tags"><span>VGG16</span><span>Transfer Learning</span><span>Computer Vision</span><span>Pose Estimation</span></div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="proj-number">03</div>
+            <h3>Accelerometer-Based Human Step Counting</h3>
+            <div class="case-study-mini">
+              <div><span class="cs-label">Challenge</span><p>Accurately detecting and counting human steps from raw accelerometer data with minimal noise interference.</p></div>
+              <div><span class="cs-label">Approach</span><p>Motion sensing techniques combined with signal processing and calibration methods.</p></div>
+              <div><span class="cs-label">Solution</span><p>A reliable step detection system with enhanced accuracy through systematic calibration and filtering.</p></div>
+              <div><span class="cs-label">Key Learning</span><p>Signal calibration is as important as the detection algorithm for real-world motion sensing reliability.</p></div>
+            </div>
+            <div class="proj-tags"><span>Accelerometer</span><span>Signal Processing</span><span>Calibration</span><span>Motion Sensing</span></div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="proj-number">04</div>
+            <h3>Deep Learning for COVID-19 Detection</h3>
+            <div class="case-study-mini">
+              <div><span class="cs-label">Challenge</span><p>Enabling rapid, accurate COVID-19 detection from chest X-rays to support clinical decision-making.</p></div>
+              <div><span class="cs-label">Approach</span><p>EfficientNet-B0 architecture with data preprocessing, model tuning, and optimization.</p></div>
+              <div><span class="cs-label">Solution</span><p>A deep learning model achieving reliable COVID-19 detection using Python and TensorFlow/Keras.</p></div>
+              <div><span class="cs-label">Key Learning</span><p>Medical image analysis demands rigorous preprocessing and careful model optimization to avoid false negatives.</p></div>
+            </div>
+            <div class="proj-tags"><span>EfficientNet-B0</span><span>TensorFlow</span><span>Medical Imaging</span><span>Healthcare AI</span></div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="proj-number">05</div>
+            <h3>Smart Bandage for Wound Healing</h3>
+            <div class="case-study-mini">
+              <div><span class="cs-label">Challenge</span><p>Enabling continuous, remote wound monitoring without requiring frequent clinical visits.</p></div>
+              <div><span class="cs-label">Approach</span><p>Wi-Fi enabled smart bandage prototype with real-time data transmission capabilities.</p></div>
+              <div><span class="cs-label">Solution</span><p>A connected healthcare device providing continuous wound monitoring with live data streaming.</p></div>
+              <div><span class="cs-label">Key Learning</span><p>IoT in healthcare requires balancing data reliability, power efficiency, and patient comfort simultaneously.</p></div>
+            </div>
+            <div class="proj-tags"><span>IoT</span><span>Wi-Fi</span><span>Healthcare</span><span>Real-time Monitoring</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <span class="footer-name">Asika A</span>
+        <div class="footer-socials">
+          <a href="https://github.com/Asika03" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="https://www.linkedin.com/in/asikaselvam" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="mailto:asikaayyarselvam@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section class="section" id="achievements">
+      <div class="section-bg">
+        <div class="goo-blob goo-2"></div>
+        <div class="goo-blob goo-3"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Recognition & Growth</span>
+          <h2 class="section-title">Achievements</h2>
+        </div>
+        <div class="ach-grid">
+          <div class="ach-card reveal ach-highlight">
+            <div class="ach-icon">01</div>
+            <h3>TNWISE Hackathon Winner</h3>
+            <p>Competed and won at the TNWISE Hackathon, demonstrating problem-solving ability and technical execution under pressure.</p>
+          </div>
+          <div class="ach-card reveal">
+            <div class="ach-icon">02</div>
+            <h3>International Conference Paper</h3>
+            <p>Presented a paper at the International Conference on Advancements in Biomedical Systems and Healthcare Technologies.</p>
+          </div>
+          <div class="ach-card reveal">
+            <div class="ach-icon">03</div>
+            <h3>HTML5 Certification</h3>
+            <p>The Complete HTML5 Course: From Beginning to Expert — Udemy</p>
+          </div>
+          <div class="ach-card reveal">
+            <div class="ach-icon">04</div>
+            <h3>Web Design Certification</h3>
+            <p>Web Design Course with HTML, CSS and WordPress — Udemy</p>
+          </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top:4rem">
+          <span class="section-tag">Community & Leadership</span>
+          <h2 class="section-title" style="font-size:1.8rem">Leadership Roles</h2>
+        </div>
+        <div class="leadership-grid">
+          <div class="leadership-card reveal">
+            <div class="lc-icon">IEEE</div>
+            <div class="lc-content">
+              <h3>Literary & Editorial Team Head</h3>
+              <span class="lc-org">IEEE SC 12951 — PSG College of Technology</span>
+              <p>Leading the literary and editorial team, driving content strategy, team collaboration, and communication initiatives for the IEEE student chapter.</p>
+              <div class="lc-tags"><span>Leadership</span><span>Communication</span><span>Editorial</span></div>
+            </div>
+          </div>
+          <div class="leadership-card reveal">
+            <div class="lc-icon">BME</div>
+            <div class="lc-content">
+              <h3>Member</h3>
+              <span class="lc-org">BMEA — PSG College of Technology</span>
+              <p>Active member of the Biomedical Engineering Association, contributing to academic and professional development activities within the department.</p>
+              <div class="lc-tags"><span>Collaboration</span><span>Biomedical</span><span>Community</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <span class="footer-name">Asika A</span>
+        <div class="footer-socials">
+          <a href="https://github.com/Asika03" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="https://www.linkedin.com/in/asikaselvam" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="mailto:asikaayyarselvam@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="section-bg">
+        <div class="goo-blob goo-1"></div>
+        <div class="goo-blob goo-4"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="contact-centered">
+          <div class="contact-info reveal">
+            <div class="collab-card">
+              <h3>Open for Collaboration</h3>
+              <p>I'm actively looking to collaborate on projects involving AI/ML, healthcare technology, data analytics, and frontend development. Whether it's a research project, open-source contribution, or a product idea — I'm interested in building meaningful technology together.</p>
+              <div class="collab-interests">
+                <span>AI & Healthcare</span>
+                <span>Data Analytics</span>
+                <span>Frontend Dev</span>
+                <span>Research Projects</span>
+                <span>Open Source</span>
+              </div>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:asikaayyarselvam@gmail.com" class="contact-link-card">
+                <div class="clc-icon email-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="clc-label">Email</span>
+                  <span class="clc-value">asikaayyarselvam@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/asikaselvam" target="_blank" class="contact-link-card">
+                <div class="clc-icon linkedin-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div>
+                  <span class="clc-label">LinkedIn</span>
+                  <span class="clc-value">linkedin.com/in/asikaselvam</span>
+                </div>
+              </a>
+              <a href="https://github.com/Asika03" target="_blank" class="contact-link-card">
+                <div class="clc-icon github-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div>
+                  <span class="clc-label">GitHub</span>
+                  <span class="clc-value">github.com/Asika03</span>
+                </div>
+              </a>
+              <div class="contact-link-card no-link">
+                <div class="clc-icon location-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="clc-label">Location</span>
+                  <span class="clc-value">Coimbatore, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+            <!-- WhatsApp CTA -->
+            <div class="wa-wrap">
+              <a
+                href="https://wa.me/919788124908?text=Hi%20Asika%2C%20I%20am%20interested%20in%20collaborating%20with%20you."
+                target="_blank"
+                class="wa-btn"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Say Hello!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <span class="footer-name">Asika A</span>
+        <div class="footer-socials">
+          <a href="https://github.com/Asika03" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="https://www.linkedin.com/in/asikaselvam" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="mailto:asikaayyarselvam@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
